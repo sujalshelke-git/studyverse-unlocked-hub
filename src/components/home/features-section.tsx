@@ -1,6 +1,6 @@
 
 import { FeatureCard } from "@/components/ui/feature-card";
-import { MessageSquare, BookOpen, AiAssistant } from "lucide-react";
+import { MessageSquare, BookOpen, Bot } from "lucide-react";
 
 export function FeaturesSection() {
   return (
@@ -31,7 +31,7 @@ export function FeaturesSection() {
           <FeatureCard
             title="AI Study Assistant"
             description="Get personalized learning support, generate summaries, flashcards, and practice quizzes."
-            icon={<AiAssistant className="h-6 w-6" />}
+            icon={<Bot className="h-6 w-6" />}
             href="/assistant"
           />
         </div>

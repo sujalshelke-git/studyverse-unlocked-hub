@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/theme/theme-toggle";
-import { Menu, X, Book, MessageSquare, AiAssistant } from "lucide-react";
+import { Menu, X, Book, MessageSquare, Bot } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export function Navbar() {
@@ -27,7 +27,7 @@ export function Navbar() {
         <nav className="hidden md:flex items-center gap-6">
           <NavLink to="/forum" icon={<MessageSquare className="h-4 w-4 mr-1" />} label="Forum" />
           <NavLink to="/notes" icon={<Book className="h-4 w-4 mr-1" />} label="Notes" />
-          <NavLink to="/assistant" icon={<AiAssistant className="h-4 w-4 mr-1" />} label="AI Assistant" />
+          <NavLink to="/assistant" icon={<Bot className="h-4 w-4 mr-1" />} label="AI Assistant" />
         </nav>
 
         {/* Actions */}
@@ -63,7 +63,7 @@ export function Navbar() {
           <nav className="flex flex-col space-y-3">
             <MobileNavLink to="/forum" icon={<MessageSquare className="h-4 w-4 mr-2" />} label="Forum" onClick={toggleMenu} />
             <MobileNavLink to="/notes" icon={<Book className="h-4 w-4 mr-2" />} label="Notes" onClick={toggleMenu} />
-            <MobileNavLink to="/assistant" icon={<AiAssistant className="h-4 w-4 mr-2" />} label="AI Assistant" onClick={toggleMenu} />
+            <MobileNavLink to="/assistant" icon={<Bot className="h-4 w-4 mr-2" />} label="AI Assistant" onClick={toggleMenu} />
             <div className="border-t my-2"></div>
             <MobileNavLink to="/login" label="Login" onClick={toggleMenu} />
             <MobileNavLink to="/register" label="Sign Up" onClick={toggleMenu} />
