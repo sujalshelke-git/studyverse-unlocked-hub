@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Book, Upload } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function NotesPage() {
   const notes = [
@@ -107,9 +108,11 @@ export default function NotesPage() {
                 <path d="m21 21-4.3-4.3" />
               </svg>
             </div>
-            <Button>
-              <Upload className="mr-2 h-4 w-4" />
-              Upload Notes
+            <Button asChild>
+              <Link to="/notes/upload">
+                <Upload className="mr-2 h-4 w-4" />
+                Upload Notes
+              </Link>
             </Button>
           </div>
         </div>

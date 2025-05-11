@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/Index";
 import ForumPage from "./pages/Forum";
 import NotesPage from "./pages/Notes";
+import UploadNotesPage from "./pages/UploadNotes";
 import AIAssistantPage from "./pages/AIAssistant";
 import LoginPage from "./pages/Login";
 import RegisterPage from "./pages/Register";
@@ -26,6 +27,7 @@ const App = () => (
             <Route path="/" element={<HomePage />} />
             <Route path="/forum" element={<ForumPage />} />
             <Route path="/notes" element={<NotesPage />} />
+            <Route path="/notes/upload" element={<UploadNotesPage />} />
             <Route path="/assistant" element={<AIAssistantPage />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/register" element={<RegisterPage />} />
